@@ -15,7 +15,11 @@ The emphasis is on building **clear intuition** and **good habits** when working
 - Data types (`dtype`) and device placement
 - Arithmetic and element-wise operations
 - In-place operations and common pitfalls 
-- Random value generation and probabilistic operations 
+- Random value generation and probabilistic operations
+
+📓 Notebook: `notebooks/pytorch_tensor_fundamentals.ipynb`
+
+📄 PDF export: `exports/pytorch_tensor_fundamentals.pdf`
 
 Additional notebooks may be added over time as the repository grows 🌱.
 
