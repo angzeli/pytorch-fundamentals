@@ -2,3 +2,10 @@
 
 % Disable section numbering
 \setcounter{secnumdepth}{0}
+
+% Ensure code cells are included
+((* set nbconvert_config = {
+    "TemplateExporter": {
+        "exclude_input": false
+    }
+} *))
