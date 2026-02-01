@@ -21,7 +21,21 @@ The emphasis is on building **clear intuition** and **good habits** when working
 
 📄 PDF export: `exports/pytorch_tensor_fundamentals.pdf`
 
+### 2. A Minimal Learning Problem (Autograd + Backprop Mechanics)
+-	Defining a minimal model with trainable parameters (w, b)
+-	Forward pass and loss computation (binary cross-entropy with logits)
+-	How `torch.autograd` builds the computation graph
+- What `loss.backward()` does (gradients, leaf tensors, chain rule)
+- Manual parameter updates with `torch.no_grad()`
+- Training loops, convergence, and stopping criteria
+- Learning rate effects: speed vs stability (tested across multiple values)
+
+📓 Notebook: `notebooks/pytorch_minimal_learning_problem.ipynb`
+
+📄 PDF export: `exports/pytorch_minimal_learning_problem.pdf`
+
 Additional notebooks may be added over time as the repository grows 🌱.
+
 
 ---
 
