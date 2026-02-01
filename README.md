@@ -9,7 +9,7 @@ The emphasis is on building **clear intuition** and **good habits** when working
 
 ## 📚 Current Contents
 
-### 1. PyTorch Tensor Fundamentals
+### 1. PyTorch Tensor Fundamentals (2026-01-31)
 - Tensor creation (from Python and NumPy)
 - Shapes and dimensionality
 - Data types (`dtype`) and device placement
@@ -17,11 +17,14 @@ The emphasis is on building **clear intuition** and **good habits** when working
 - In-place operations and common pitfalls 
 - Random value generation and probabilistic operations
 
-📓 Notebook: `notebooks/pytorch_tensor_fundamentals.ipynb`
+📓 Notebook: `notebooks/PyTorch Tutorial 1_tensor_fundamentals.ipynb`
 
-📄 PDF export: `exports/pytorch_tensor_fundamentals.pdf`
+For "fresh" version (where all variables are cleaned up), please go for `notebooks/PyTorch Tutorial 1_tensor_fundamentals.ipynb`
 
-### 2. A Minimal Learning Problem (Autograd + Backprop Mechanics)
+📄 PDF export: `exports/PyTorch Tutorial 1_tensor_fundamentals.pdf`
+
+
+### 2. A Minimal Learning Problem (a touch on Autograd) (2026-02-01)
 -	Defining a minimal model with trainable parameters (w, b)
 -	Forward pass and loss computation (binary cross-entropy with logits)
 -	How `torch.autograd` builds the computation graph
@@ -30,9 +33,11 @@ The emphasis is on building **clear intuition** and **good habits** when working
 - Training loops, convergence, and stopping criteria
 - Learning rate effects: speed vs stability (tested across multiple values)
 
-📓 Notebook: `notebooks/pytorch_minimal_learning_problem.ipynb`
+📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem.ipynb`
 
-📄 PDF export: `exports/pytorch_minimal_learning_problem.pdf`
+For "fresh" version, please go for `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh.ipynb`
+
+📄 PDF export: `exports/PyTorch Tutorial 2_A minimal learning problem.pdf`
 
 Additional notebooks may be added over time as the repository grows 🌱.
 
