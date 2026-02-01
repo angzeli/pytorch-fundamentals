@@ -1,0 +1,4 @@
+((*- extends 'article.tplx' -*))
+
+% Turn off section numbering in the generated PDF
+\setcounter{secnumdepth}{0}
