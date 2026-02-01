@@ -1,0 +1,16 @@
+((* extends "classic.tex.j2" *))
+
+((* block header *))
+{{ super() }}
+% ---- Disable section numbering (must be in the preamble) ----
+\setcounter{secnumdepth}{0}
+((* endblock header *))
+
+((* set nbconvert_config = {
+  "TemplateExporter": {
+    "exclude_input": false,
+    "exclude_output": false,
+    "exclude_input_prompt": true,
+    "exclude_output_prompt": true
+  }
+} *))
