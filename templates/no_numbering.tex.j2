@@ -1,11 +1,7 @@
 ((* extends "base.tex.j2" *))
 
-% Disable section numbering
+((* block header *))
+{{ super() }}
+% Disable section numbering (must be in the LaTeX preamble)
 \setcounter{secnumdepth}{0}
-
-% Ensure code cells are included
-((* set nbconvert_config = {
-    "TemplateExporter": {
-        "exclude_input": false
-    }
-} *))
+((* endblock header *))
