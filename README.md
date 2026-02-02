@@ -17,11 +17,11 @@ The emphasis is on building **clear intuition** and **good habits** when working
 - In-place operations and common pitfalls 
 - Random value generation and probabilistic operations
 
-📓 Notebook: `notebooks/PyTorch Tutorial 1_tensor_fundamentals.ipynb`
+📓 Notebook: `notebooks/PyTorch Tutorial 1_tensor_fundamentals_v1.0.ipynb`
 
-For "fresh" version (where all variables are cleaned up), please go for `notebooks/PyTorch Tutorial 1_tensor_fundamentals.ipynb`
+For "fresh" version (where all variables are cleaned up), please go for `notebooks/PyTorch Tutorial 1_tensor_fundamentals_Fresh_v1.0.ipynb`
 
-📄 PDF export: `exports/PyTorch Tutorial 1_tensor_fundamentals.pdf`
+📄 PDF export: `exports/PyTorch Tutorial 1_tensor_fundamentals_v1.0.pdf`
 
 
 ### 2. A Minimal Learning Problem (a touch on Autograd) (2026-02-01)
@@ -33,11 +33,11 @@ For "fresh" version (where all variables are cleaned up), please go for `noteboo
 - Training loops, convergence, and stopping criteria
 - Learning rate effects: speed vs stability (tested across multiple values)
 
-📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem.ipynb`
+📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem_v1.1.ipynb`
 
-For "fresh" version, please go for `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh.ipynb`
+For "fresh" version, please go for `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh_v1.1.ipynb`
 
-📄 PDF export: `exports/PyTorch Tutorial 2_A minimal learning problem.pdf`
+📄 PDF export: `exports/PyTorch Tutorial 2_A minimal learning problem_v1.1.pdf`
 
 Additional notebooks may be added over time as the repository grows 🌱.
 
@@ -63,6 +63,17 @@ Topics such as automatic differentiation (autograd), neural network modules, and
 
 Each notebook is self-contained and can be read independently.  
 Examples are designed to be minimal, explicit, and easy to experiment with.
+
+---
+
+## 📦 Versions and Legacy Files
+
+Each tutorial notebook is versioned (e.g. `v1.0`, `v1.1`) to reflect meaningful updates and improvements.
+
+- The **latest version** of each tutorial is kept in the `notebooks/` directory.
+- Earlier versions are preserved in the `notebooks/legacy/` folder for reference and comparison. This is the same for `exports`.
+
+Readers are encouraged to start with the most recent version unless they have a specific reason to consult an older release.
 
 ---
 
