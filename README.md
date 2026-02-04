@@ -45,6 +45,21 @@ The emphasis is on building **clear intuition** and **good habits** when working
 📓 Notebook:
 `notebooks/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_Fresh_v1.0.ipynb`
 
+### 4. Tensor Gradients and Vector–Jacobian Products (last changed: 2026-02-04)
+- Scalar losses vs tensor-valued outputs
+- Why full Jacobians are rarely constructed explicitly
+- Vector–Jacobian products (VJPs) in torch.autograd
+- Explicit upstream gradients in `backward(v)`
+- Interpretation of `.grad` for non-scalar outputs
+- Gradient accumulation and explicit gradient clearing
+- Sensitivity analysis via weighted upstream gradients
+- Visualising how gradients redistribute across inputs
+
+📓 Notebook:
+`notebooks/PyTorch Tutorial 4_Tensor Gradients and Vector–Jacobian Products_Fresh_v1.0.ipynb`
+
+(The solution of the exercise at the end is provided in `notebooks/worked/PyTorch Tutorial 4_Tensor Gradients and Vector–Jacobian Products_v1.0.ipynb`)
+
 Additional notebooks may be added over time as the repository grows 🌱.
 
 
