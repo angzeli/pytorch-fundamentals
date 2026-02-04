@@ -9,7 +9,7 @@ The emphasis is on building **clear intuition** and **good habits** when working
 
 ## 📚 Current Contents
 
-### 1. PyTorch Tensor Fundamentals (last changed in: 2026-01-31)
+### 1. PyTorch Tensor Fundamentals (last changed: 2026-01-31)
 - Tensor creation (from Python and NumPy)
 - Shapes and dimensionality
 - Data types (`dtype`) and device placement
@@ -20,7 +20,7 @@ The emphasis is on building **clear intuition** and **good habits** when working
 📓 Notebook: `notebooks/PyTorch Tutorial 1_tensor_fundamentals_Fresh_v1.0.ipynb`
 
 
-### 2. A Minimal Learning Problem (a touch on Autograd) (last changed in: 2026-02-03)
+### 2. A Minimal Learning Problem (a touch on Autograd) (last changed: 2026-02-03)
 -	Defining a minimal model with trainable parameters (w, b)
 -	Forward pass and loss computation (binary cross-entropy with logits)
 -	How `torch.autograd` builds the computation graph
@@ -32,7 +32,7 @@ The emphasis is on building **clear intuition** and **good habits** when working
 📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh_v1.2.ipynb`
 
 
-### 3. Understanding Autograd and Computation Graphs (last changed in: 2026-02-03)
+### 3. Understanding Autograd and Computation Graphs (last changed: 2026-02-03)
 - Directed acyclic graphs (DAGs) underlying `torch.autograd`
 - Forward and backward passes as graph construction and traversal
 - The role of `grad_fn` and `next_functions`
