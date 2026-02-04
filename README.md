@@ -17,11 +17,7 @@ The emphasis is on building **clear intuition** and **good habits** when working
 - In-place operations and common pitfalls 
 - Random value generation and probabilistic operations
 
-📓 Notebook: `notebooks/PyTorch Tutorial 1_tensor_fundamentals_v1.0.ipynb`
-
-For "fresh" version (where all variables are cleaned up), please go for `notebooks/PyTorch Tutorial 1_tensor_fundamentals_Fresh_v1.0.ipynb`
-
-📄 PDF export: `exports/PyTorch Tutorial 1_tensor_fundamentals_v1.0.pdf`
+📓 Notebook: `notebooks/PyTorch Tutorial 1_tensor_fundamentals_Fresh_v1.0.ipynb`
 
 
 ### 2. A Minimal Learning Problem (a touch on Autograd) (2026-02-01)
@@ -33,11 +29,8 @@ For "fresh" version (where all variables are cleaned up), please go for `noteboo
 - Training loops, convergence, and stopping criteria
 - Learning rate effects: speed vs stability (tested across multiple values)
 
-📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem_v1.1.ipynb`
+📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh_v1.2.ipynb`
 
-For "fresh" version, please go for `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh_v1.2.ipynb`
-
-📄 PDF export: `exports/PyTorch Tutorial 2_A minimal learning problem_v1.2.pdf`
 
 ### 3. Understanding Autograd and Computation Graphs (2026-02-02)
 - Directed acyclic graphs (DAGs) underlying `torch.autograd`
@@ -50,12 +43,7 @@ For "fresh" version, please go for `notebooks/PyTorch Tutorial 2_A minimal learn
 - Higher-order differentiation using `create_graph=True`
 
 📓 Notebook:
-`notebooks/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_v1.0.ipynb`
-
-For "fresh" version, please go for `notebooks/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_Fresh_v1.0.ipynb`
-
-📄 PDF export:
-`exports/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_v1.0.pdf`
+`notebooks/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_Fresh_v1.0.ipynb`
 
 Additional notebooks may be added over time as the repository grows 🌱.
 
@@ -81,6 +69,11 @@ Topics such as automatic differentiation (autograd), neural network modules, and
 
 Each notebook is self-contained and can be read independently.  
 Examples are designed to be minimal, explicit, and easy to experiment with.
+
+The notebooks in `/notebooks/` are the clean, recommended versions.  
+Worked and exploratory versions are archived in `/notebooks/worked/`.
+
+PDF exports of each notebook are available in `/exports`.
 
 ---
 
