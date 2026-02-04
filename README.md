@@ -35,9 +35,27 @@ For "fresh" version (where all variables are cleaned up), please go for `noteboo
 
 📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem_v1.1.ipynb`
 
-For "fresh" version, please go for `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh_v1.1.ipynb`
+For "fresh" version, please go for `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh_v1.2.ipynb`
 
-📄 PDF export: `exports/PyTorch Tutorial 2_A minimal learning problem_v1.1.pdf`
+📄 PDF export: `exports/PyTorch Tutorial 2_A minimal learning problem_v1.2.pdf`
+
+### 3. Understanding Autograd and Computation Graphs (2026-02-02)
+- Directed acyclic graphs (DAGs) underlying `torch.autograd`
+- Forward and backward passes as graph construction and traversal
+- The role of `grad_fn` and `next_functions`
+- Leaf tensors, intermediate tensors, and gradient accumulation
+- Tracing gradient flow through the computation graph
+- Dynamic graph construction (define-by-run in PyTorch)
+- Programmatic inspection of computation graphs
+- Higher-order differentiation using `create_graph=True`
+
+📓 Notebook:
+`notebooks/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_v1.0.ipynb`
+
+For "fresh" version, please go for `notebooks/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_Fresh_v1.0.ipynb`
+
+📄 PDF export:
+`exports/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_v1.0.pdf`
 
 Additional notebooks may be added over time as the repository grows 🌱.
 
