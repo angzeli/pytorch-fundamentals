@@ -10,58 +10,55 @@ The emphasis is on building **clear intuition** and **good habits** when working
 ## 📚 Current Contents
 
 ### 1. PyTorch Tensor Fundamentals (last changed: 2026-01-31)
-- Tensor creation (from Python and NumPy)
-- Shapes and dimensionality
-- Data types (`dtype`) and device placement
-- Arithmetic and element-wise operations
-- In-place operations and common pitfalls 
-- Random value generation and probabilistic operations
+- Tensor creation, shapes, and basic operations
+- Data types (dtype) and device placement
+- Element-wise vs in-place operations
+- Random tensors and probabilistic behaviour
 
 📓 Notebook: `notebooks/PyTorch Tutorial 1_tensor_fundamentals_Fresh_v1.0.ipynb`
 
 
 ### 2. A Minimal Learning Problem (a touch on Autograd) (last changed: 2026-02-03)
--	Defining a minimal model with trainable parameters (w, b)
--	Forward pass and loss computation (binary cross-entropy with logits)
--	How `torch.autograd` builds the computation graph
-- What `loss.backward()` does (gradients, leaf tensors, chain rule)
-- Manual parameter updates with `torch.no_grad()`
-- Training loops, convergence, and stopping criteria
-- Learning rate effects: speed vs stability (tested across multiple values)
+- Defining a minimal trainable model
+- Forward pass, scalar loss, and backpropagation
+- How `loss.backward()` populates gradients
+- Manual gradient descent and learning rate effects
 
 📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh_v1.2.ipynb`
 
 
 ### 3. Understanding Autograd and Computation Graphs (last changed: 2026-02-03)
-- Directed acyclic graphs (DAGs) underlying `torch.autograd`
-- Forward and backward passes as graph construction and traversal
-- The role of `grad_fn` and `next_functions`
-- Leaf tensors, intermediate tensors, and gradient accumulation
-- Tracing gradient flow through the computation graph
-- Dynamic graph construction (define-by-run in PyTorch)
-- Programmatic inspection of computation graphs
-- Higher-order differentiation using `create_graph=True`
+- Computation graphs (DAGs) in torch.autograd
+- Forward vs backward graph traversal
+- `grad_fn`, `next_functions`, and leaf tensors
+- Dynamic graph construction and higher-order gradients
 
 📓 Notebook:
 `notebooks/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_Fresh_v1.0.ipynb`
 
 ### 4. Tensor Gradients and Vector–Jacobian Products (last changed: 2026-02-06)
-- Scalar losses vs tensor-valued outputs
-- Why full Jacobians are rarely constructed explicitly
-- Vector–Jacobian products (VJPs) in torch.autograd
-- Explicit upstream gradients in `backward(v)`
-- Interpretation of `.grad` for non-scalar outputs
-- Gradient accumulation and explicit gradient clearing
-- Sensitivity analysis via weighted upstream gradients
-- Visualising how gradients redistribute across inputs
+- Scalar vs tensor-valued outputs
+- Vector–Jacobian products via `backward(v)`
+- Interpreting `.grad` as sensitivity
+- Gradient accumulation and explicit zeroing
 
 📓 Notebook:
 `notebooks/PyTorch Tutorial 4_Tensor Gradients and Vector–Jacobian Products_Fresh_v1.0.ipynb`
 
-(The solution of the exercise at the end is provided in `notebooks/worked/PyTorch Tutorial 4_Tensor Gradients and Vector–Jacobian Products_v1.0.ipynb`)
+(Worked solution available in `notebooks/worked/PyTorch Tutorial 4_Tensor Gradients and Vector–Jacobian Products_v1.0.ipynb`)
+
+### 🧪 Workshop 1: From Gradient Flow to Optimisation Intuition (last changed: 2026-02-06)
+- Gradients as sensitivity measures
+- Explicit upstream gradients as objective design
+- Gradient flow through linear maps and nonlinearities
+- Visual intuition for optimisation behaviour
+
+📓 Notebook:
+`notebooks/PyTorch Workshop 1_From Gradient Flow to Optimisation Intuition_Fresh_v1.0.ipynb`
+
+(Worked solution and discussion in `notebooks/worked/PyTorch Workshop 1_From Gradient Flow to Optimisation Intuition_v1.0.ipynb`)
 
 Additional notebooks may be added over time as the repository grows 🌱.
-
 
 ---
 
@@ -94,7 +91,7 @@ PDF exports of each notebook are available in `/exports`.
 
 ## 📦 Versions and Legacy Files
 
-Each tutorial notebook is versioned (e.g. `v1.0`, `v1.1`) to reflect meaningful updates and improvements.
+Each tutorial notebook is versioned (e.g., `v1.0`, `v1.1`) to reflect meaningful updates and improvements.
 
 - The **latest version** of each tutorial is kept in the `notebooks/` directory.
 - Earlier versions are preserved in the `notebooks/legacy/` folder for reference and comparison. This is the same for `exports`.
