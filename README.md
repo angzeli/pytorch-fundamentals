@@ -47,16 +47,28 @@ The emphasis is on building **clear intuition** and **good habits** when working
 
 (Worked solution available in `notebooks/worked/PyTorch Tutorial 4_Tensor Gradients and Vector–Jacobian Products_v1.0.ipynb`)
 
-### 🧪 Workshop 1: From Gradient Flow to Optimisation Intuition (last changed: 2026-02-06)
+### 🧪 Workshop 1: From Gradient Flow to Optimisation Intuition (last changed: 2026-02-19)
 - Gradients as sensitivity measures
 - Explicit upstream gradients as objective design
 - Gradient flow through linear maps and nonlinearities
 - Visual intuition for optimisation behaviour
 
 📓 Notebook:
-`notebooks/PyTorch Workshop 1_From Gradient Flow to Optimisation Intuition_Fresh_v1.0.ipynb`
+`notebooks/PyTorch Workshop 1_From Gradient Flow to Optimisation Intuition_Fresh_v1.1.ipynb`
 
-(Worked solution and discussion in `notebooks/worked/PyTorch Workshop 1_From Gradient Flow to Optimisation Intuition_v1.0.ipynb`)
+(Worked solution and discussion in `notebooks/worked/PyTorch Workshop 1_From Gradient Flow to Optimisation Intuition_v1.1.ipynb`)
+
+### 🧪 Workshop 2: From Gradient Structure to Optimisation Dynamics (last changed: 2026-02-19)
+- Gradient descent as repeated application of local sensitivity
+- Single-step updates and their geometric interpretation
+- Objective structure and its effect on optimisation trajectories
+- Conditioning, anisotropy, and stability in gradient-driven motion
+- Visualising parameter evolution under gradient descent
+
+📓 Notebook:
+`notebooks/PyTorch Workshop 2_From Gradient Structure to Optimisation Dynamics_Fresh_v1.0.ipynb`
+
+(Worked solution and extended discussion in `notebooks/worked/PyTorch Workshop 2_From Gradient Structure to Optimisation Dynamics_v1.0.ipynb`)
 
 Additional notebooks may be added over time as the repository grows 🌱.
 
@@ -100,7 +112,7 @@ Readers are encouraged to start with the most recent version unless they have a 
 
 ---
 
-## ✍️ Author
+## 👤 Author
 
 **Angze Li**
 
