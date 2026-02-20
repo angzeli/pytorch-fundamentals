@@ -123,6 +123,8 @@ You are encouraged to:
 
 ## ✍️ Author & Status
 
-Author: Angze Li
-Status: Actively developed
-Last updated: 2026-02-20
+**Author**: Angze Li
+
+**Status**: Actively developed
+
+**Last updated**: 2026-02-20
