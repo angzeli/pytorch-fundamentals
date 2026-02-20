@@ -42,6 +42,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── workshop_01_gradient_flow_to_optimisation.ipynb
 │   └── workshop_02_objective_design_and_local_dynamics.ipynb
 ├── part_2/ #currently working
+├── LICENSE
 └── README.md
 ```
 Each notebook is self-contained and can be read independently, but the intended experience is sequential.
