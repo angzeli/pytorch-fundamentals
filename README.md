@@ -34,6 +34,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 ├── part_1/
 │   ├── worked/
 │       └── (worked and exploratory versions)
+│   ├── README.md
 │   ├── tutorial_01_tensor_fundamentals.ipynb
 │   ├── tutorial_02_minimal_learning_problem.ipynb
 │   ├── tutorial_03_autograd_and_graphs.ipynb
