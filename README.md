@@ -1,123 +1,127 @@
-# PyTorch Fundamentals
+# 📘 Gradients, Autograd, and Optimisation in PyTorch
 
-This repository contains a growing set of notes and notebooks exploring core PyTorch concepts.  
-It currently starts with an introductory notebook on **PyTorch tensor fundamentals** 📐.
+This repository is a concept-first exploration of gradients, automatic differentiation, and optimisation using PyTorch.
 
-The emphasis is on building **clear intuition** and **good habits** when working with PyTorch, rather than providing a comprehensive API reference.
+Rather than teaching PyTorch as a high-level deep-learning framework, the material treats it as a numerical and analytical tool for understanding:
+- tensors and linear algebra,
+- computation graphs and automatic differentiation,
+- gradient structure and sensitivity,
+- and how optimisation emerges from repeated gradient-based updates.
 
----
-
-## 📚 Current Contents
-
-### 1. PyTorch Tensor Fundamentals (last changed: 2026-01-31)
-- Tensor creation, shapes, and basic operations
-- Data types (dtype) and device placement
-- Element-wise vs in-place operations
-- Random tensors and probabilistic behaviour
-
-📓 Notebook: `notebooks/PyTorch Tutorial 1_tensor_fundamentals_Fresh_v1.0.ipynb`
-
-
-### 2. A Minimal Learning Problem (a touch on Autograd) (last changed: 2026-02-03)
-- Defining a minimal trainable model
-- Forward pass, scalar loss, and backpropagation
-- How `loss.backward()` populates gradients
-- Manual gradient descent and learning rate effects
-
-📓 Notebook: `notebooks/PyTorch Tutorial 2_A minimal learning problem_Fresh_v1.2.ipynb`
-
-
-### 3. Understanding Autograd and Computation Graphs (last changed: 2026-02-03)
-- Computation graphs (DAGs) in torch.autograd
-- Forward vs backward graph traversal
-- `grad_fn`, `next_functions`, and leaf tensors
-- Dynamic graph construction and higher-order gradients
-
-📓 Notebook:
-`notebooks/PyTorch Tutorial 3_Understanding Autograd and Computation Graphs_Fresh_v1.0.ipynb`
-
-### 4. Tensor Gradients and Vector–Jacobian Products (last changed: 2026-02-06)
-- Scalar vs tensor-valued outputs
-- Vector–Jacobian products via `backward(v)`
-- Interpreting `.grad` as sensitivity
-- Gradient accumulation and explicit zeroing
-
-📓 Notebook:
-`notebooks/PyTorch Tutorial 4_Tensor Gradients and Vector–Jacobian Products_Fresh_v1.0.ipynb`
-
-(Worked solution available in `notebooks/worked/PyTorch Tutorial 4_Tensor Gradients and Vector–Jacobian Products_v1.0.ipynb`)
-
-### 🧪 Workshop 1: From Gradient Flow to Optimisation Intuition (last changed: 2026-02-19)
-- Gradients as sensitivity measures
-- Explicit upstream gradients as objective design
-- Gradient flow through linear maps and nonlinearities
-- Visual intuition for optimisation behaviour
-
-📓 Notebook:
-`notebooks/PyTorch Workshop 1_From Gradient Flow to Optimisation Intuition_Fresh_v1.1.ipynb`
-
-(Worked solution and discussion in `notebooks/worked/PyTorch Workshop 1_From Gradient Flow to Optimisation Intuition_v1.1.ipynb`)
-
-### 🧪 Workshop 2: From Gradient Structure to Optimisation Dynamics (last changed: 2026-02-19)
-- Gradient descent as repeated application of local sensitivity
-- Single-step updates and their geometric interpretation
-- Objective structure and its effect on optimisation trajectories
-- Conditioning, anisotropy, and stability in gradient-driven motion
-- Visualising parameter evolution under gradient descent
-
-📓 Notebook:
-`notebooks/PyTorch Workshop 2_From Gradient Structure to Optimisation Dynamics_Fresh_v1.0.ipynb`
-
-(Worked solution and extended discussion in `notebooks/worked/PyTorch Workshop 2_From Gradient Structure to Optimisation Dynamics_v1.0.ipynb`)
-
-Additional notebooks may be added over time as the repository grows 🌱.
+The goal is not just to show how to compute gradients, but to understand **what they mean, where they come from, and how they shape learning dynamics**.
 
 ---
 
-## 🎯 Scope and Intent
+## 🧠 Philosophy
 
-These materials are written as **learning and teaching notes**, intended to clarify how PyTorch tensors behave in practice.
+Most tutorials jump quickly from tensors to neural networks to training loops.
 
-Topics such as automatic differentiation (autograd), neural network modules, and optimisation routines are **not covered in the current notebook**, but may be introduced in future notebooks.
+This repository deliberately slows down.
 
----
+Gradients are treated as:
+- mathematical objects, not black-box training signals,
+- sensitivity measures, not just optimisation updates,
+- structured quantities shaped by objectives and model architecture.
 
-## 🧩 Recommended Prerequisites
-
-- Basic Python programming
-- Familiarity with NumPy arrays
-
----
-
-## ▶️ How to Use
-
-Each notebook is self-contained and can be read independently.  
-Examples are designed to be minimal, explicit, and easy to experiment with.
-
-The notebooks in `/notebooks/` are the clean, recommended versions.  
-Worked and exploratory versions are archived in `/notebooks/worked/`.
-
-PDF exports of each notebook are available in `/exports`.
+By the time optimisers are introduced, they should feel like a natural consequence of ideas already developed — not a new abstraction to memorise.
 
 ---
 
-## 📦 Versions and Legacy Files
+## 📦 Repository Structure
 
-Each tutorial notebook is versioned (e.g., `v1.0`, `v1.1`) to reflect meaningful updates and improvements.
+The material is organised into Parts, each forming a coherent conceptual unit.
+```python
+├── part_1/
+│   ├── worked/
+│       └── (worked and exploratory versions)
+│   ├── tutorial_01_tensor_fundamentals.ipynb
+│   ├── tutorial_02_minimal_learning_problem.ipynb
+│   ├── tutorial_03_autograd_and_graphs.ipynb
+│   ├── tutorial_04_tensor_gradients_and_vjp.ipynb
+│   ├── workshop_01_gradient_flow_to_optimisation.ipynb
+│   └── workshop_02_objective_design_and_local_dynamics.ipynb
+├── part_2/ #currently working
+└── README.md
+```
+Each notebook is self-contained and can be read independently, but the intended experience is sequential.
 
-- The **latest version** of each tutorial is kept in the `notebooks/` directory.
-- Earlier versions are preserved in the `notebooks/legacy/` folder for reference and comparison. This is the same for `exports`.
+🌱 The repository is still growing.
 
-Readers are encouraged to start with the most recent version unless they have a specific reason to consult an older release.
+---
+## 📘 Part 1 — Foundations: Tensors, Autograd, and Gradient Structure
+
+Part 1 builds the conceptual foundations needed to understand gradients before optimisation algorithms are introduced.
+
+It covers:
+- tensor mechanics and numerical structure,
+- how autograd builds and traverses computation graphs,
+- scalar vs tensor-valued differentiation,
+- vector–Jacobian products as the core object of `backward`,
+- interpreting `.grad` as sensitivity,
+- and visualising gradient structure in controlled experiments.
+
+Part 1 concludes with two workshops that explicitly connect gradient structure to **local optimisation intuition**, without yet introducing optimisers or training pipelines.
+
+📂 See `part_1/README.md` for full details.
 
 ---
 
-## 👤 Author
+## 🚧 Part 2 — Optimisation Dynamics (Coming Next)
 
-**Angze Li**
+Part 2 will build directly on the gradient intuition developed in Part 1 and introduce:
+- gradient descent as repeated local updates,
+- learning rates, conditioning, and scaling,
+- curvature, geometry, and stability,
+- and how optimisation behaviour emerges over time.
+
+Nothing in Part 2 will assume unfamiliar gradient concepts — the groundwork is laid entirely in Part 1.
 
 ---
 
-## ⚖️ License
+## 🧪 Fresh vs Worked Notebooks
 
-This project is licensed under the **MIT License**.
+For most notebooks, two versions exist:
+- "Fresh": clean, minimal versions intended for reading, teaching, or first-pass study.
+
+  The "Fresh" notebooks are in the main folder.
+- Worked: exploratory versions containing additional experiments, plots, and intermediate outputs. Models answers are also in these notebooks.
+
+  The worked notebooks are in `worked/` folder.
+
+This separation keeps the main narrative clear while preserving the full reasoning process.
+
+---
+
+## 🎯 Intended Audience
+
+This repository is suitable for:
+- advanced undergraduates,
+- master’s students,
+- PhD students,
+- or practitioners who want a deeper understanding of gradients and optimisation.
+
+A background in linear algebra and basic calculus is assumed, but no prior deep-learning experience is required.
+
+---
+
+## 🧭 How to Use This Repository
+
+Recommended order:
+	1.	Work through Tutorials 1–4 sequentially.
+	2.	Use Workshop 1 to consolidate gradient intuition.
+	3.	Use Workshop 2 to bridge gradients to optimisation thinking.
+	4.	Continue into Part 2 when available.
+
+You are encouraged to:
+- modify cells,
+- change upstream gradients,
+- visualise `.grad`,
+- and treat the notebooks as experimental sandboxes.
+
+---
+
+## ✍️ Author & Status
+
+Author: Angze Li
+Status: Actively developed
+Last updated: 2026-02-20
