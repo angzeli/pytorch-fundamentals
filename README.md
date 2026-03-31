@@ -1,29 +1,51 @@
-# 📘 Gradients, Autograd, and Optimisation in PyTorch
+# 📘 From PyTorch to Bayesian Optimisation
 
-This repository is a concept-first exploration of gradients, automatic differentiation, and optimisation using PyTorch.
+This repository is a concept-first exploration of gradients, automatic differentiation, optimisation, and surrogate-based decision-making using PyTorch.
 
-Rather than teaching PyTorch as a high-level deep-learning framework, the material treats it as a numerical and analytical tool for understanding:
+Rather than teaching PyTorch only as a high-level deep-learning framework, the material uses it as a numerical and analytical tool for understanding a much broader progression:
+
 - tensors and linear algebra,
 - computation graphs and automatic differentiation,
-- gradient structure and sensitivity,
-- and how optimisation emerges from repeated gradient-based updates.
+- gradient structure and optimisation dynamics,
+- modelling unknown objective functions,
+- uncertainty-aware surrogate models,
+- and finally **Bayesian Optimisation** through BoTorch.
 
-The goal is not just to show how to compute gradients, but to understand **what they mean, where they come from, and how they shape learning dynamics**.
+The goal is not just to show how to compute gradients or train models, but to build a coherent path from **low-level PyTorch mechanics** to **modern data-efficient optimisation**.
+
+In other words, this repository is designed as a bridge:
+
+> **from PyTorch fundamentals to Bayesian Optimisation.**
 
 ---
 
 ## 🧠 Philosophy
 
-Most tutorials jump quickly from tensors to neural networks to training loops.
+Most tutorials either:
+- stop at PyTorch basics,
+- jump quickly into neural-network training,
+- or treat Bayesian Optimisation as a separate black-box topic.
 
-This repository deliberately slows down.
+This repository takes a different route.
 
-Gradients are treated as:
-- mathematical objects, not black-box training signals,
-- sensitivity measures, not just optimisation updates,
-- structured quantities shaped by objectives and model architecture.
+It deliberately slows down and builds the ideas in sequence.
 
-By the time optimisers are introduced, they should feel like a natural consequence of ideas already developed — not a new abstraction to memorise.
+PyTorch is treated not just as a framework for fitting models, but as a flexible environment for understanding:
+- gradients as mathematical objects,
+- autograd as a computational mechanism,
+- optimisation as a dynamical process,
+- and surrogate modelling as a way to reason about expensive unknown functions.
+
+By the time Bayesian Optimisation is introduced, it should feel like the natural outcome of ideas already developed:
+- first understand gradients,
+- then understand optimisation,
+- then understand why optimisation alone is not enough,
+- then build models of unknown functions,
+- and finally use those models to guide intelligent search.
+
+The aim is therefore not just to teach isolated tools, but to build a conceptual pathway:
+
+> **PyTorch → gradients → optimisation → surrogate modelling → Bayesian Optimisation**
 
 ---
 
@@ -41,7 +63,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_04_tensor_gradients_and_vjp.ipynb
 │   ├── workshop_01_gradient_flow_to_optimisation.ipynb
 │   └── workshop_02_objective_design_and_local_dynamics.ipynb
-├── part_2/ #currently working
+├── part_2/
 │   ├── worked/
 │       └── (worked and exploratory versions)
 │   ├── README.md
@@ -49,8 +71,15 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_02_geometry_and_conditioning_of_optimisation.ipynb
 │   ├── tutorial_03_momentum_as_a_dynamical_system.ipynb
 │   ├── tutorial_04_optimisation_beyond_convexity.ipynb
-│   ├── workshop_01 #currently working
-│   └── workshop_02 #currently working
+│   ├── workshop_01  #currently working
+│   └── workshop_02  #currently working
+├── part_3/
+│   ├── worked/
+│       └── (worked and exploratory versions)
+│   ├── README.md
+│   ├── tutorial_01_why_model_an_unknown_function.ipynb
+│   ├── tutorial_02_prediction_uncertainty_and_confidence.ipynb #currently working
+│   └── tutorial_03_gaussian_processes_as_surrogate_models.ipynb #currently working
 ├── LICENSE
 └── README.md
 ```
@@ -77,15 +106,45 @@ Part 1 concludes with two workshops that explicitly connect gradient structure t
 
 ---
 
-## 🚧 Part 2 — Optimisation Dynamics (Coming Next)
+## 📘 Part 2 — Optimisation Dynamics 
 
-Part 2 will build directly on the gradient intuition developed in Part 1 and introduce:
-- gradient descent as repeated local updates,
-- learning rates, conditioning, and scaling,
-- curvature, geometry, and stability,
-- and how optimisation behaviour emerges over time.
+Part 2 builds directly on the gradient intuition developed in Part 1 and studies how optimisation behaviour emerges over time.
 
-Nothing in Part 2 will assume unfamiliar gradient concepts — the groundwork is laid entirely in Part 1.
+It covers:
+- gradient descent as a discrete dynamical system,
+- learning rates, stability, and contraction,
+- geometry, conditioning, and narrow valleys,
+- momentum and inertia,
+- and the challenges of optimisation beyond convexity.
+
+
+📂 See `part_2/README.md` for full details.
+
+---
+
+## 🚧 Part 3 — Modelling Unknown Functions (Bridge)
+
+Part 3 serves as the conceptual bridge from optimisation dynamics to **Bayesian Optimisation**.
+
+In Part 2, the objective was always assumed to be available for direct analysis or evaluation. In Part 3, that assumption is relaxed.
+
+We now study what happens when the objective function is:
+- expensive to evaluate,
+- only partially observed,
+- and better approached through a learned model than through brute-force search.
+
+This part introduces:
+- why modelling is needed in expensive optimisation,
+- the role of surrogate models,
+- prediction, uncertainty, and confidence,
+- and Gaussian Processes as a principled surrogate framework.
+
+The current tutorial sequence is:
+- `tutorial_01_why_model_an_unknown_function.ipynb` ✅ uploaded
+- `tutorial_02_prediction_uncertainty_and_confidence.ipynb` 🚧 in development
+- `tutorial_03_gaussian_processes_as_surrogate_models.ipynb` 🚧 in development
+
+Part 3 is intended to prepare the ground for the next stage of the repository, where modelling and uncertainty are turned into a full sequential optimisation strategy.
 
 ---
 
@@ -93,10 +152,9 @@ Nothing in Part 2 will assume unfamiliar gradient concepts — the groundwork is
 
 For most notebooks, two versions exist:
 - "Fresh": clean, minimal versions intended for reading, teaching, or first-pass study.
-
   The "Fresh" notebooks are in the main folder.
+  
 - Worked: exploratory versions containing additional experiments, plots, and intermediate outputs. Models answers are also in these notebooks.
-
   The worked notebooks are in `worked/` folder.
 
 This separation keeps the main narrative clear while preserving the full reasoning process.
@@ -137,4 +195,4 @@ You are encouraged to:
 
 **Status**: Actively developed
 
-**Last updated**: 2026-02-20
+**Last updated**: 2026-03-31
