@@ -138,12 +138,15 @@ This part introduces:
 - why modelling is needed in expensive optimisation,
 - the role of surrogate models,
 - prediction, uncertainty, and confidence,
-- and Gaussian Processes as a principled surrogate framework.
+- Gaussian Processes as a principled surrogate framework,
+- and acquisition function.
 
 The current tutorial sequence is:
 - `tutorial_01_why_model_an_unknown_function.ipynb` ✅ uploaded
-- `tutorial_02_prediction_uncertainty_and_confidence.ipynb` 🚧 in development
-- `tutorial_03_gaussian_processes_as_surrogate_models.ipynb` 🚧 in development
+- `tutorial_02_prediction_uncertainty_and_confidence.ipynb` ✅ uploaded
+- `tutorial_03_gaussian_processes_as_surrogate_models.ipynb` ✅ uploaded
+- `tutorial_04_choosing_where_to_evaluate_next.ipynb` 🚧 in development
+
 
 Part 3 is intended to prepare the ground for the next stage of the repository, where modelling and uncertainty are turned into a full sequential optimisation strategy.
 
