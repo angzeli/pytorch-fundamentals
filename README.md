@@ -80,7 +80,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_01_why_model_an_unknown_function.ipynb
 │   ├── tutorial_02_prediction_uncertainty_and_confidence.ipynb
 │   ├── tutorial_03_gaussian_processes_as_surrogate_models.ipynb
-│   └── tutorial_04_choosing_where_to_evaluate_next.ipynb #currently working
+│   └── tutorial_04_choosing_where_to_evaluate_next.ipynb 
 ├── LICENSE
 └── README.md
 ```
@@ -123,32 +123,25 @@ It covers:
 
 ---
 
-## 🚧 Part 3 — Modelling Unknown Functions (Bridge)
+## 📘 Part 3 — Modelling Unknown Functions and Bayesian Optimisation Foundations
 
-Part 3 serves as the conceptual bridge from optimisation dynamics to **Bayesian Optimisation**.
-
-In Part 2, the objective was always assumed to be available for direct analysis or evaluation. In Part 3, that assumption is relaxed.
+Part 3 is the conceptual bridge from optimisation dynamics to **Bayesian Optimisation**.
 
 We now study what happens when the objective function is:
 - expensive to evaluate,
 - only partially observed,
-- and better approached through a learned model than through brute-force search.
+- and better handled through a learned surrogate than through brute-force search.
 
-This part introduces:
-- why modelling is needed in expensive optimisation,
-- the role of surrogate models,
-- prediction, uncertainty, and confidence,
-- Gaussian Processes as a principled surrogate framework,
-- and acquisition function.
+This part develops the core ideas needed before using modern Bayesian Optimisation libraries.
 
-The current tutorial sequence is:
-- `tutorial_01_why_model_an_unknown_function.ipynb` ✅ uploaded
-- `tutorial_02_prediction_uncertainty_and_confidence.ipynb` ✅ uploaded
-- `tutorial_03_gaussian_processes_as_surrogate_models.ipynb` ✅ uploaded
-- `tutorial_04_choosing_where_to_evaluate_next.ipynb` 🚧 in development
+It introduces:
+- why expensive objectives require modelling,
+- how surrogate models approximate unknown functions,
+- why prediction alone is not enough without uncertainty,
+- Gaussian Processes as principled probabilistic surrogates,
+- and acquisition functions for deciding where to evaluate next.
 
-
-Part 3 is intended to prepare the ground for the next stage of the repository, where modelling and uncertainty are turned into a full sequential optimisation strategy.
+This prepares the ground for the next stage of the repository, where these ideas are implemented more practically using **BoTorch**.
 
 ---
 
@@ -174,22 +167,6 @@ This repository is suitable for:
 - or practitioners who want a deeper understanding of gradients and optimisation.
 
 A background in linear algebra and basic calculus is assumed, but no prior deep-learning experience is required.
-
----
-
-## 🧭 How to Use This Repository
-
-Recommended order:
-	1.	Work through Tutorials 1–4 sequentially.
-	2.	Use Workshop 1 to consolidate gradient intuition.
-	3.	Use Workshop 2 to bridge gradients to optimisation thinking.
-	4.	Continue into Part 2 when available.
-
-You are encouraged to:
-- modify cells,
-- change upstream gradients,
-- visualise `.grad`,
-- and treat the notebooks as experimental sandboxes.
 
 ---
 
