@@ -155,6 +155,28 @@ It introduces:
 
 This prepares the ground for the next stage of the repository, where these ideas are implemented more practically using **BoTorch**.
 
+📂 See `part_3/README.md` for full details.
+
+---
+
+## 📘 Part 4 — Practical Bayesian Optimisation with BoTorch
+
+Part 4 turns the conceptual foundations of Part 3 into practical workflows using **BoTorch**.
+
+Rather than building Gaussian Processes and acquisition logic entirely from first principles, we now study how those same ideas are implemented in a modern Bayesian Optimisation library.
+
+It covers:
+- fitting Gaussian Process surrogates in BoTorch,
+- working with BoTorch posterior objects,
+- acquisition functions such as EI, PI, and UCB,
+- optimising acquisition functions to propose new candidates,
+- and building the standard sequential Bayesian Optimisation loop in practice.
+
+Part 4 is still focused on **standard single-loop Bayesian Optimisation**.
+Its purpose is to make the transition from theory to implementation clear and interpretable, before moving on to more advanced BO strategies.
+
+📂 See `part_4/README.md` for full details.
+
 ---
 
 ## 🧪 Fresh vs Worked Notebooks
