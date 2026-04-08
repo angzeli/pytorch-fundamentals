@@ -83,7 +83,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   └── tutorial_04_choosing_where_to_evaluate_next.ipynb
 │   ├── workshop_01  #currently working
 │   └── workshop_02  #currently working
-├── part_3/
+├── part_4/ 
 │   ├── worked/
 │       └── (worked and exploratory versions)
 │   ├── README.md
