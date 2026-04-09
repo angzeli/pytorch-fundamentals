@@ -92,6 +92,68 @@ This tutorial emphasises that BO is often most useful not as a fully autonomous 
 
 ---
 
+# 📘 Part 6 — Advanced BO Extensions
+
+> **Goal: extend Bayesian Optimisation into richer, more realistic, and more research-oriented settings.**
+
+If Part 5 focuses on bringing BO closer to realistic experimental workflows, Part 6 pushes further into important extensions that arise when optimisation becomes noisier, more structured, and more complex.
+
+These tutorials move beyond standard single-objective, single-fidelity, continuous-space BO and introduce settings that are especially relevant in scientific and experimental optimisation.
+
+## Structure of Part 6
+
+### Tutorial 1 — Noisy and replication-aware BO
+Extend BO to settings where observations are noisy and repeated measurements may be valuable.
+
+This tutorial focuses on:
+
+- noise-aware acquisition strategies,
+- the effect of observation uncertainty on BO behaviour,
+- and the trade-off between exploring new points and replicating previous ones to reduce uncertainty.
+
+---
+
+### Tutorial 2 — Multi-objective BO
+Move from optimising a single target to balancing multiple competing objectives.
+
+Examples include simultaneously optimising:
+
+- performance,
+- stability,
+- selectivity,
+- cost,
+- or other competing experimental criteria.
+
+This tutorial introduces the idea of Pareto-optimal decision-making in BO.
+
+---
+
+### Tutorial 3 — Multi-fidelity and contextual BO
+Extend BO to settings where evaluations can occur at different fidelities, or where optimisation depends on external context.
+
+This tutorial focuses on:
+
+- trading off cheap approximate evaluations against expensive accurate ones,
+- incorporating contextual information into the BO workflow,
+- and making decisions when the objective depends not only on chosen variables but also on the surrounding setting.
+
+---
+
+### Tutorial 4 — Combinatorial and structured BO
+Study BO in design spaces that are no longer simple continuous vectors.
+
+Examples include optimisation over:
+
+- discrete combinations,
+- categorical structures,
+- sequences,
+- graphs,
+- or other structured experimental choices.
+
+This tutorial focuses on how BO changes when the search space itself becomes combinatorial or structured.
+
+---
+
 # 🚀 Beyond BO
 
 After Bayesian Optimisation, there are several natural directions this project can continue toward.
