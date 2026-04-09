@@ -8,7 +8,7 @@ The next stage is to take those ideas beyond standard toy workflows and into set
 
 ---
 
-# 📘 Part 5 — Advanced Bayesian Optimisation
+# 📘 Part 5 — Realistic Bayesian Optimisation Workflows
 
 > **Goal: extend Bayesian Optimisation to more realistic, higher-value, and more experimentally relevant settings.**
 
@@ -92,7 +92,7 @@ This tutorial emphasises that BO is often most useful not as a fully autonomous 
 
 ---
 
-# 📘 Part 6 — Advanced BO Extensions
+# 📘 Part 6 — Advanced Bayesian Optimisation Extensions
 
 > **Goal: extend Bayesian Optimisation into richer, more realistic, and more research-oriented settings.**
 
