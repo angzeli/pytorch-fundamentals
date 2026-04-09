@@ -94,9 +94,9 @@ This tutorial emphasises that BO is often most useful not as a fully autonomous 
 
 # 🚀 Beyond BO
 
-After Bayesian Optimisation, the repository can branch in more than one direction.
+After Bayesian Optimisation, there are several natural directions this project can continue toward.
 
-Both directions are natural continuations, depending on whether the emphasis shifts toward **machine learning systems** or **scientific computing and communication**.
+These directions may develop **outside this repository**, as separate but related projects, depending on whether the focus shifts more toward machine learning workflows or scientific computing and visual communication.
 
 ## Option A — Applied Machine Learning with PyTorch
 This path moves from optimisation and modelling foundations toward broader machine learning workflows.
