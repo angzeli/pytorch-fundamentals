@@ -54,8 +54,7 @@ The aim is therefore not just to teach isolated tools, but to build a conceptual
 The material is organised into Parts, each forming a coherent conceptual unit.
 ```python
 ├── part_1/
-│   ├── worked/
-│       └── (worked and exploratory versions)
+│   ├── worked/ #(worked and exploratory versions)
 │   ├── README.md 
 │   ├── tutorial_01_tensor_fundamentals.ipynb
 │   ├── tutorial_02_common_pytorch_tensor_operations.ipynb
@@ -63,32 +62,28 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_04_autograd_and_graphs.ipynb
 │   ├── tutorial_05_tensor_gradients_and_vjp.ipynb
 ├── part_2/
-│   ├── worked/
-│       └── (worked and exploratory versions)
+│   ├── worked/ #(worked and exploratory versions)
 │   ├── README.md
 │   ├── tutorial_01_gradient_as_dynamical_system.ipynb
 │   ├── tutorial_02_geometry_and_conditioning_of_optimisation.ipynb
 │   ├── tutorial_03_momentum_as_a_dynamical_system.ipynb
 │   ├── tutorial_04_optimisation_beyond_convexity.ipynb
 ├── part_3/
-│   ├── worked/
-│       └── (worked and exploratory versions)
+│   ├── worked/ #(worked and exploratory versions)
 │   ├── README.md
 │   ├── tutorial_01_why_model_an_unknown_function.ipynb
 │   ├── tutorial_02_prediction_uncertainty_and_confidence.ipynb
 │   ├── tutorial_03_gaussian_processes_as_surrogate_models.ipynb
 │   └── tutorial_04_choosing_where_to_evaluate_next.ipynb
 ├── part_4/ 
-│   ├── worked/
-│       └── (worked and exploratory versions)
+│   ├── worked/ #(worked and exploratory versions)
 │   ├── README.md
 │   ├── tutorial_01_from_gaussian_processes_to_botorch_model.ipynb
 │   ├── tutorial_02_standard_acquisition_functions_in_botorch.ipynb
 │   ├── tutorial_03_full_single_loop_bo_workflow.ipynb
 │   └── tutorial_04_practical_modelling_choices_in_botorch.ipynb
 ├── part_5/ 
-│   ├── worked/
-│       └── (worked and exploratory versions)
+│   ├── worked/ #(worked and exploratory versions)
 │   ├── README.md
 │   ├── tutorial_01_higher_dimensional_custom_bo_for_experimental_design_spaces.ipynb
 │   ├── tutorial_02_batch_bo_for_parallel_experimentation.ipynb
