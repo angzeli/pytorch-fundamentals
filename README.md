@@ -56,11 +56,12 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 ├── part_1/
 │   ├── worked/
 │       └── (worked and exploratory versions)
-│   ├── README.md
+│   ├── README.md 
 │   ├── tutorial_01_tensor_fundamentals.ipynb
-│   ├── tutorial_02_minimal_learning_problem.ipynb
-│   ├── tutorial_03_autograd_and_graphs.ipynb
-│   ├── tutorial_04_tensor_gradients_and_vjp.ipynb
+│   ├── tutorial_02_common_pytorch_tensor_operations.ipynb
+│   ├── tutorial_03_minimal_learning_problem.ipynb
+│   ├── tutorial_04_autograd_and_graphs.ipynb
+│   ├── tutorial_05_tensor_gradients_and_vjp.ipynb
 ├── part_2/
 │   ├── worked/
 │       └── (worked and exploratory versions)
