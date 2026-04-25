@@ -55,18 +55,19 @@ This tutorial focuses on:
 
 ---
 
-### Tutorial 4 — Combinatorial and structured BO
-Study BO in design spaces that are no longer simple continuous vectors.
+### Tutorial 4 — Nested and structured BO for hierarchical experimental workflows
+Study BO in workflows where the optimisation problem is not a single flat search over one design vector, but a **hierarchical experimental process**.
 
-Examples include optimisation over:
+This tutorial focuses on nested optimisation settings where one layer of decisions creates or selects a system, and another layer tests or operates that system.
 
-- discrete combinations,
-- categorical structures,
-- sequences,
-- graphs,
-- or other structured experimental choices.
+Examples include:
 
-This tutorial focuses on how BO changes when the search space itself becomes combinatorial or structured.
+- optimising material or catalyst synthesis conditions in an outer loop,
+- optimising reaction, testing, or operating conditions in an inner loop,
+- treating the inner-loop result as the performance signal for the outer loop,
+- and comparing nested BO with flatter optimisation baselines.
+
+The emphasis is on how BO changes when the structure of the **workflow itself** matters, not only the type of variables in the search space.
 
 ---
 
