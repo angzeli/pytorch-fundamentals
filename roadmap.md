@@ -1,73 +1,27 @@
-# 🧭 Roadmap: Part 6 and Beyond
+# 🧭 Roadmap: BO and Beyond
 
 > **This section outlines the roadmap for the rest of the repository.**  
-> It gives a high-level view of what comes next, how the pieces connect, and where the project is ultimately heading.
+> It gives a high-level view of where the project has been, how the pieces connect, and what directions could come next.
 
-This repository began with the foundations of tensors, gradients, and optimisation, and then moved through Gaussian Processes and Bayesian Optimisation.  
-The next stage is to take those ideas beyond standard toy workflows and into settings that look much more like real scientific and experimental decision problems.
+This repository began with the foundations of tensors, gradients, and optimisation, then moved through Gaussian Processes and Bayesian Optimisation.
 
----
+The current arc has now reached a natural milestone.
 
-# 📘 Part 6 — Advanced Bayesian Optimisation Extensions
+The core BO sequence has developed from standard surrogate-based optimisation into more realistic, structured, and research-oriented workflows:
 
-> **Goal: extend Bayesian Optimisation into richer, more realistic, and more research-oriented settings.**
+- noisy observations and replication,
+- multi-objective trade-offs,
+- multi-fidelity evaluation,
+- contextual recommendations,
+- and hierarchical experimental structure.
 
-If Part 5 focuses on bringing BO closer to realistic experimental workflows, Part 6 pushes further into important extensions that arise when optimisation becomes noisier, more structured, and more complex.
+So the next question is no longer simply:
 
-These tutorials move beyond standard single-objective, single-fidelity, continuous-space BO and introduce settings that are especially relevant in scientific and experimental optimisation.
+> **what is the next BO tutorial?**
 
-## Structure of Part 6
+It is broader:
 
-### Tutorial 1 — Noisy and replication-aware BO
-Extend BO to settings where observations are noisy and repeated measurements may be valuable.
-
-This tutorial focuses on:
-
-- noise-aware acquisition strategies,
-- the effect of observation uncertainty on BO behaviour,
-- and the trade-off between exploring new points and replicating previous ones to reduce uncertainty.
-
----
-
-### Tutorial 2 — Multi-objective BO
-Move from optimising a single target to balancing multiple competing objectives.
-
-Examples include simultaneously optimising:
-
-- performance,
-- stability,
-- selectivity,
-- cost,
-- or other competing experimental criteria.
-
-This tutorial introduces the idea of Pareto-optimal decision-making in BO.
-
----
-
-### Tutorial 3 — Multi-fidelity and contextual BO
-Extend BO to settings where evaluations can occur at different fidelities, or where optimisation depends on external context.
-
-This tutorial focuses on:
-
-- trading off cheap approximate evaluations against expensive accurate ones,
-- incorporating contextual information into the BO workflow,
-- and making decisions when the objective depends not only on chosen variables but also on the surrounding setting.
-
----
-
-### Tutorial 4 — Nested and structured BO for hierarchical experimental workflows
-Study BO in workflows where the optimisation problem is not a single flat search over one design vector, but a **hierarchical experimental process**.
-
-This tutorial focuses on nested optimisation settings where one layer of decisions creates or selects a system, and another layer tests or operates that system.
-
-Examples include:
-
-- optimising material or catalyst synthesis conditions in an outer loop,
-- optimising reaction, testing, or operating conditions in an inner loop,
-- treating the inner-loop result as the performance signal for the outer loop,
-- and comparing nested BO with flatter optimisation baselines.
-
-The emphasis is on how BO changes when the structure of the **workflow itself** matters, not only the type of variables in the search space.
+> **where should the project go after building a full conceptual path from PyTorch fundamentals to advanced Bayesian Optimisation?**
 
 ---
 
@@ -75,33 +29,111 @@ The emphasis is on how BO changes when the structure of the **workflow itself** 
 
 After Bayesian Optimisation, there are several natural directions this project can continue toward.
 
-These directions may develop **outside this repository**, as separate but related projects, depending on whether the focus shifts more toward machine learning workflows or scientific computing and visual communication.
+Some directions stay close to BO and deepen the optimisation side.
 
-## Option A — Applied Machine Learning with PyTorch
-This path moves from optimisation and modelling foundations toward broader machine learning workflows.
+Others branch outward into machine learning, scientific computing, or real experimental workflow design.
 
-Possible topics include:
-
-- datasets and data pipelines,
-- training loops and validation,
-- practical model development,
-- and architecture-level reasoning.
-
-This direction is a natural continuation if the project grows toward predictive modelling, representation learning, or applied machine learning more broadly.
+These directions may develop inside this repository or become separate but related projects, depending on the final scope.
 
 ---
 
-## Option B — Scientific Visualisation and Data Analysis with matplotlib
-This path develops the communication and analysis side of scientific computing.
+## Option A — Even More Advanced Bayesian Optimisation Topics
+
+This path continues deeper into modern BO research.
+
+Part 6 introduced several advanced BO settings, but there are still many important extensions that could form a more specialised continuation.
 
 Possible topics include:
 
-- publication-quality figures,
-- advanced plotting and layout techniques,
-- diagnostic visualisation,
-- and reproducible data-analysis workflows.
+- trust-region Bayesian Optimisation,
+- high-dimensional BO with embeddings or additive structure,
+- constrained BO with probabilistic feasibility models,
+- multi-task and transfer BO,
+- preference-based BO,
+- entropy-search-style acquisition functions,
+- robust BO under distribution shift,
+- batch and asynchronous BO at larger scale,
+- and BO with more expressive surrogate models beyond standard GPs.
+
+This direction is natural if the project continues toward a more research-facing BO curriculum.
+
+The emphasis would shift from understanding major BO workflow types to studying specialised methods that solve harder modelling and decision-making problems.
+
+---
+
+## Option B — Realistic Interactive BO Workflows
+
+This path moves from tutorial-scale BO examples toward realistic optimisation systems that interact with users, data files, and experimental feedback.
+
+Instead of only running synthetic objective functions, the workflow would start to resemble an actual optimisation campaign.
+
+Possible topics include:
+
+- interactive BO notebooks that ask the user to enter experimental results,
+- persistent experiment logs using CSV or database files,
+- resume-safe BO campaigns,
+- candidate review and rejection workflows,
+- human-in-the-loop judgement and annotation,
+- multi-user experiment tracking,
+- integration with laboratory or simulation outputs,
+- and reproducible reporting of optimisation progress.
+
+This direction is especially natural if the goal is to make BO practically usable for real scientific projects.
+
+The emphasis would be less on new acquisition functions and more on building the surrounding workflow that makes BO operational.
+
+In other words, this path asks:
+
+> **how do we turn BO from an algorithm into a usable experimental decision system?**
+
+---
+
+## Option C — Applied Machine Learning with PyTorch
+
+This path moves from optimisation and modelling foundations toward broader machine learning workflows.
+
+The repository already builds strong foundations in tensors, autograd, optimisation, and uncertainty-aware modelling.
+
+A natural next step would be to study how those ideas appear in practical machine learning pipelines.
+
+Possible topics include:
+
+- datasets and data loaders,
+- training and validation loops,
+- loss functions and metrics,
+- regularisation and model selection,
+- neural network architectures,
+- representation learning,
+- uncertainty-aware prediction,
+- and practical model debugging.
+
+This direction is natural if the project grows toward predictive modelling, applied ML, or modern PyTorch model development more broadly.
+
+The emphasis would shift from optimisation as decision-making to learning useful representations and predictive models from data.
+
+---
+
+## Option D — Scientific Visualisation and Data Analysis with Matplotlib
+
+This path develops the communication and analysis side of scientific computing.
+
+Many parts of the repository already rely on visualisation to explain tensors, gradients, optimisation dynamics, surrogate models, and BO trajectories.
+
+A dedicated visualisation track could turn that into a standalone skill set.
+
+Possible topics include:
+
+- publication-quality scientific figures,
+- advanced matplotlib layouts,
+- uncertainty bands and diagnostic plots,
+- visualising optimisation trajectories,
+- comparing experimental campaigns,
+- plotting high-dimensional summaries,
+- and building reproducible data-analysis notebooks.
 
 This direction is especially natural if the project continues to emphasise scientific interpretation, experiment analysis, and research presentation.
+
+The emphasis would be on making computational results understandable, persuasive, and reproducible.
 
 ---
 
@@ -109,22 +141,33 @@ This direction is especially natural if the project continues to emphasise scien
 
 The repository follows a coherent progression:
 
-- **Part 1 — Foundations** → how we represent and manipulate mathematical objects  
-- **Part 2 — Optimisation** → how systems move under gradient-based updates  
-- **Part 3 — Modelling** → how we represent unknown functions and uncertainty  
-- **Part 4 — Bayesian Optimisation** → how modelling and optimisation combine into decision-making  
-- **Part 5 — Advanced Bayesian Optimisation** → how that decision-making framework is extended to realistic and practical settings  
+- **Part 1 — Foundations** → how we represent and manipulate mathematical objects;
+- **Part 2 — Optimisation** → how systems move under gradient-based updates;
+- **Part 3 — Modelling** → how we represent unknown functions and uncertainty;
+- **Part 4 — Bayesian Optimisation** → how modelling and optimisation combine into sequential decision-making;
+- **Part 5 — Practical Bayesian Optimisation** → how BO adapts to more realistic experimental settings;
+- **Part 6 — Structured and Advanced Bayesian Optimisation** → how BO changes when noise, trade-offs, fidelity, context, and workflow hierarchy become part of the problem.
 
 So the overall direction of the repository is not just to learn PyTorch or Bayesian Optimisation in isolation.
 
 It is to build a layered understanding of:
 
 - representation,
+- differentiation,
 - optimisation,
 - uncertainty,
-- and decision-making
+- surrogate modelling,
+- and decision-making under limited information.
 
-as connected parts of a broader scientific and computational workflow.
+The deeper theme is that each part changes the meaning of “optimisation”.
+
+At the beginning, optimisation meant following gradients.
+
+Later, it meant modelling unknown functions.
+
+Then it became sequential decision-making under uncertainty.
+
+By Part 6, it became a structured scientific workflow where the optimiser must account for noisy data, competing objectives, evaluation cost, external context, and multi-stage experimental structure.
 
 ---
 
@@ -137,4 +180,17 @@ What makes Bayesian Optimisation powerful is their combination:
 
 > **using models of uncertainty to make efficient decisions under limited budgets.**
 
-That is the central idea connecting the whole repository so far — and Part 5 is where that idea begins to look much more like the real problems it was designed for.
+That idea connects the whole repository so far.
+
+The project began with PyTorch mechanics, but its larger direction is scientific decision-making: how to represent problems, model uncertainty, reason about objectives, and choose useful actions when experiments are expensive.
+
+The next stage can now branch in several directions.
+
+- It can go deeper into advanced BO research.
+- It can move toward realistic interactive BO systems.
+- It can broaden into applied machine learning.
+- Or it can develop the visualisation and analysis tools needed to communicate scientific results clearly.
+
+All of these directions continue the same central theme:
+
+> **building computational tools that help us understand, optimise, and make decisions about complex systems.**
