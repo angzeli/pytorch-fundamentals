@@ -156,5 +156,5 @@ That makes it possible to study how BO behaviour changes when:
 ---
 
 **Author:** Angze Li  
-**Last updated:** 2026-04-13  
+
 **Version:** v1.0
