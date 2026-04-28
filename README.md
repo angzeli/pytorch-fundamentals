@@ -95,7 +95,7 @@ The material is organised into Parts, each forming a coherent conceptual unit.
 │   ├── tutorial_01_noisy_and_replication_aware_bo.ipynb
 │   ├── tutorial_02_multi_objective_bo_and_pareto_optimal_dicision_making.ipynb
 │   ├── tutorial_03_multi_fidelity_and_contextual_bo.ipynb 
-│   └── tutorial_04_nested_and_structured_bo_for_hierarchical_experimental_workflows.ipynb #currently working
+│   └── tutorial_04_structured_bo_for_hierarchical_experimental_workflows.ipynb 
 ├── LICENSE
 └── README.md
 ```
@@ -199,6 +199,25 @@ Part 5 focuses on the idea that practical BO is not only about maximising an acq
 This part therefore bridges standard single-loop BO and more realistic scientific optimisation campaigns.
 
 📂 See `part_5/README.md` for full details.
+
+---
+
+## 📘 Part 6 — Advanced Bayesian Optimisation Workflow Extensions
+
+Part 6 extends the realism-oriented BO workflows of Part 5 into settings where the optimisation problem itself has **richer statistical or workflow structure**.
+
+It covers:
+- noisy BO and replication-aware decision-making,
+- multi-objective BO and Pareto-optimal decision-making,
+- multi-fidelity BO under unequal evaluation cost and accuracy,
+- contextual BO where the best design depends on external conditions,
+- and structured BO for hierarchical experimental workflows.
+
+Part 6 focuses on the idea that realistic BO is often not just about choosing the next design point in a flat space. In many scientific problems, the optimiser must also reason about noise, repeated measurements, trade-offs between objectives, cheaper and more expensive evaluations, context-dependent recommendations, or multi-stage experimental structure.
+
+This part therefore bridges practical workflow-aware BO and more advanced BO settings where the meaning of the input variables, the observations, or the decision process itself becomes more structured.
+
+📂 See `part_6/README.md` for full details.
 
 ---
 
